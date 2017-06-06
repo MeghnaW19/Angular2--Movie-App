@@ -10,8 +10,7 @@ export class NavSearchComponent implements OnInit {
   constructor(private router: Router) { }
   ngOnInit() {
   }
-searchMovie(movieName: String) {
-    // console.log(movieName);
-    this.router.navigate(['movie', movieName]);
+searchMovie(movieName: String): void {
+    this.router.navigate(['movies', movieName]);
 }
 }

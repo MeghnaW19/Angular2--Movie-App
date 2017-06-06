@@ -9,15 +9,18 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { MovielistComponent } from './movielist/movielist.component';
 import { NavSearchComponent } from './nav-search/nav-search.component';
+import { FavMoviesComponent } from './fav-movies/fav-movies.component';
 
 const routes: Routes = [
-  { path: 'movie/:movieName',  component: MovielistComponent }];
+  { path: 'movies/:movieName',  component: MovielistComponent },
+  { path: 'fav-mov', component: FavMoviesComponent }];
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     MovielistComponent,
-    NavSearchComponent
+    NavSearchComponent,
+    FavMoviesComponent
   ],
   imports: [
     BrowserModule,
